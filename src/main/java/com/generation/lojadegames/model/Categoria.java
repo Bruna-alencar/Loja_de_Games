@@ -25,7 +25,7 @@ public class Categoria {
 	@NotNull(message = "O Atributo Descrição é obrigatório")
 	private String descricao;
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "catgoria", cascade = CascadeType.REMOVE)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
 	private List<Produto> produto;
 	
